@@ -1,8 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import loginIcon from "../assets/images/avatar-icon.png";
-import { Button } from "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import loginIcon from "../assets/images/user.png";
+import Button from "@mui/material/Button";
 
 export default function Header() {
   const activeStyles = {
@@ -43,13 +42,15 @@ export default function Header() {
         <Link to="login" className="login-link">
           <img src={loginIcon} className="login-icon" />
         </Link>
-        <button
+
+        <Button
+          className="margin-top"
           onClick={fakeLogOut}
-          type="button"
-          className="btn btn-outline-danger"
+          variant="outlined"
+          color="error"
         >
           Logout
-        </button>
+        </Button>
       </nav>
     </header>
   );
