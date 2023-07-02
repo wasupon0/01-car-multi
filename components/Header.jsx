@@ -47,7 +47,7 @@ export default function Header() {
           className="margin-top"
           onClick={fakeLogOut}
           variant="outlined"
-          color="error"
+          color="success"
         >
           Logout
         </Button>
