@@ -11,7 +11,8 @@ import {
 //import firebaseConfig from "./firebaseConfig";
 //import "dotenv/config";
 
-//TODO: move apiKey to dotenv
+// 1. move apiKey to dotenv
+// 2. add env values to webhosting
 // Your web app's Firebase configuration
 
 const firebaseConfig = {
